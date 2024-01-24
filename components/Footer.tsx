@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import audiophile from "@/public/images/audiophile 2.svg";
-import { list, socials } from "@/data";
+import { list} from "@/data";
 import twitter from "@/public/icons/twitter.svg";
 import facebook from "@/public/icons/facebook.svg";
 import instagram from "@/public/icons/instagram.svg"
@@ -10,7 +10,7 @@ import instagram from "@/public/icons/instagram.svg"
 const Footer = () => {
   return (
     <div className="bg-[#121212]">
-      <div className="w-10/12 mx-auto  flex flex-col justify-between py-6 text-white">
+      <div className="w-10/12 mx-auto flex flex-col justify-between py-6 text-white">
         <section className=" w-full flex justify-between">
           <Image src={audiophile} alt={"logo"}></Image>
           <ul className="flex">

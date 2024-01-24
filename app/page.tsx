@@ -12,10 +12,10 @@ const Home = () => {
         <Header/>
       </div>
       
-      <div className="bg-blue-300 w-10/12 mx-auto">
+      <div className="w-10/12 mx-auto">
       <Category/>
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 };
