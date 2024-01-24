@@ -6,16 +6,16 @@ import shadow from "@/public/images/Oval Copy 4.svg";
 
 const Category = () => {
   return (
-    <div className="flex justify-between gap-10 mt-20 h-[284px] bg-red-600">
+    <div className="flex justify-between gap-10 my-20">
         {categoryList.map((item,i)=> (
-            <div key={i} className="w-4/12 flex flex-col items-center">
-                    <div className="relativ">
-                     <Image src={item.image} alt="" width={100} height={400}></Image>
+            <div key={i} className="w-4/12 flex flex-col items-center relative">
+                    <div className="absolute ">
+                     <Image src={item.image} alt="" width={100}></Image>
                     </div>
-                    <div className="bg-[#F1F1F1] rounded-[8px] h-[204px] w-full flex flex-col items-center">
+                    <div className="bg-[#F1F1F1] rounded-[8px] mt-16 pb-10 w-full flex flex-col items-center">
                     <Image src={shadow} alt="shadow"></Image>
                     <h1 className="tracking-[2px]">{item.name}</h1>
-                    <p className="mt-4 tracking-[2px]">
+                    <p className="mt-4 tracking-[2px] text-xs">
                         SHOP <span className="ml-4 text-primary">{">"}</span>
                     </p>
                     </div>
@@ -26,4 +26,4 @@ const Category = () => {
 };
 
 export default Category;
-// top-[49px]
+// 
