@@ -1,7 +1,9 @@
 import Category from "@/components/Category";
 import Footer from "@/components/Footer";
+import FourthRectangle from "@/components/FourthRectangle";
 import Header from "@/components/Header";
 import NavBar from "@/components/NavBar";
+import ProductOne from "@/components/ProductOne";
 import React from "react";
 
 const Home = () => {
@@ -14,8 +16,10 @@ const Home = () => {
       
       <div className="w-10/12 mx-auto">
       <Category/>
+      <ProductOne/>
+      <FourthRectangle/>
       </div>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 };
