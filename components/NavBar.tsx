@@ -4,13 +4,9 @@ import React from 'react'
 import  Image from 'next/image'
 import audiophile from "@/public/images/audiophile 2.svg"
 import Shopping  from 'lucide-react'
+import { list } from '@/data'
 
-const list = [
-    "HOME",
-    "HEADPHONES",
-    "SPEAKERS",
-    "EARPHONES"
-]
+
 const NavBar = () => {
    
   return (
