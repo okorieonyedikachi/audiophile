@@ -3,7 +3,9 @@ import Footer from "@/components/Footer";
 import FourthRectangle from "@/components/FourthRectangle";
 import Header from "@/components/Header";
 import NavBar from "@/components/NavBar";
+import RectangleOne from "@/components/RectangleOne";
 import ProductOne from "@/components/RectangleOne";
+import RectangleTwo from "@/components/RectangleTwo";
 import React from "react";
 
 const Home = () => {
@@ -16,7 +18,8 @@ const Home = () => {
       
       <div className="w-10/12 mx-auto">
       <Category/>
-      <ProductOne/>
+      <RectangleOne/>
+      <RectangleTwo/>
       <FourthRectangle/>
       </div>
       <Footer/>
