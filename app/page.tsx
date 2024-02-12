@@ -13,16 +13,16 @@ const Home = () => {
     <div className="w-screen h-screen flex flex-col">
       <div className="w-full bg-[#121212] text-[#FFFFFF]">
         <NavBar />
-        <Header/>
+        <Header />
       </div>
-      
+
       <div className="w-10/12 mx-auto">
-      <Category/>
-      <RectangleOne/>
-      <RectangleTwo/>
-      <FourthRectangle/>
+        <Category />
+        <RectangleOne />
+        <RectangleTwo />
+        <FourthRectangle />
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
