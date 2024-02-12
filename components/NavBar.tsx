@@ -8,6 +8,7 @@ import { list } from "@/data";
 import Link from "next/link";
 
 const NavBar = () => {
+  // const arrayDataItems = list.map((item, i) => <div key={i}>{item.title}</div>);
   return (
     <div className="w-10/12 mx-auto flex justify-between py-6 border-b-[#FFF] border-b-[1px] max-sm:w-full">
       <section>
@@ -19,7 +20,7 @@ const NavBar = () => {
             key={i}
             className="mx-[1rem] hover:text-primary hover:cursor-pointer"
           >
-            <Link href={item.link}>{item.title}</Link>
+            <Link href={item.link}> {item.title}</Link>
           </li>
         ))}
       </ul>

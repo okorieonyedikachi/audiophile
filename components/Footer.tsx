@@ -5,6 +5,7 @@ import { list } from "@/data";
 import twitter from "@/public/icons/twitter.svg";
 import facebook from "@/public/icons/facebook.svg";
 import instagram from "@/public/icons/instagram.svg";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -18,7 +19,7 @@ const Footer = () => {
                 key={i}
                 className="ml-[2rem] text-xs hover:text-primary hover:cursor-pointer"
               >
-                {item}
+                <Link href={item.link}> {item.title}</Link>
               </li>
             ))}
           </ul>
