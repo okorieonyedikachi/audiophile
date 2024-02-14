@@ -4,7 +4,6 @@ import earphone from "@/public/images/earphone.png"
 
 
 export const list = [
-   { title:"HOME", link: "/" },
     { title:"HEADPHONES", link: "/headphones"},
     { title:"SPEAKERS", link: "/speakers"},
     {title:"EARPHONES", link: "/earphones"}

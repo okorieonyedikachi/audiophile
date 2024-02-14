@@ -1,7 +1,12 @@
 import React from "react";
+import PageHeader from "../(component)/pageHeader";
 
-const page = () => {
-  return <div>page</div>;
+const earphonesPage = () => {
+  return (
+    <div>
+      <PageHeader title="EARPHONES" />
+    </div>
+  );
 };
 
-export default page;
+export default earphonesPage;

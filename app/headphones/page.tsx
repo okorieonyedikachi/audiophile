@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import PageHeader from "../(component)/pageHeader";
 
 const page = () => {
   return (
-    <div>page</div>
-  )
-}
+    <>
+      <PageHeader title="HEADPHONES" />
+    </>
+  );
+};
 
-export default page
+export default page;
