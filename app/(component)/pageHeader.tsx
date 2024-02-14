@@ -9,7 +9,7 @@ const PageHeader = ({ title }: PageHeaderProps) => {
   return (
     <div className="w-full bg-[#121212] text-[#FFFFFF] mb- flex flex-col ">
       <NavBar />
-      <div className="w-10/12 flex items-center bg-red-20 mx-auto py-6 justify-center text-2xl my-24">
+      <div className="w-10/12 flex items-center bg-red-20 mx-auto py-6 justify-center text-2xl tracking-[10px] my-24">
         {title}
       </div>
     </div>
