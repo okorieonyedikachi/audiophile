@@ -3,6 +3,8 @@ import React from "react";
 import headset1 from "@/public/images/headset1.png";
 import { Button } from "@/components/ui/button";
 import { reverse } from "dns";
+import Link from "next/link";
+import ProductDetail from "../productdetail/page";
 
 interface CategoryShopProps {
   image: any;
@@ -42,7 +44,9 @@ const CategoryShop = ({
           <h1 className="font-semibold text-4xl w-6/12">{name}</h1>
           <p className="font-thin">{description}</p>
           <div className="w-3/12">
-            <Button>SEE PRODUCT</Button>
+            <Link href={"productdetail"}>
+              <Button>SEE PRODUCT</Button>
+            </Link>
           </div>
         </div>
       </div>
