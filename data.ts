@@ -14,9 +14,9 @@ export const list = [
 ];
 
 export const categoryList = [
-  { image: headset, name: "HEADPHONES" },
-  { image: speaker, name: "SPEAKERS" },
-  { image: earphone, name: "EARPHONES" },
+  { image: headset, name: "HEADPHONES", link: "/headphones" },
+  { image: speaker, name: "SPEAKERS", link: "/speakers" },
+  { image: earphone, name: "EARPHONES", link: "/earphones" },
 ];
 
 export const headphonesList = [

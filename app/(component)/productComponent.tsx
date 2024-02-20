@@ -2,6 +2,9 @@ import React from "react";
 import Image from "next/image";
 import headset2 from "@/public/images/headset2.png";
 import { Button } from "@/components/ui/button";
+import headset1a from "@/public/images/more-images/headset1a.png";
+import headset1b from "@/public/images/more-images/headset1b.png";
+import headset1c from "@/public/images/more-images/headset1c.png";
 
 const ProductComponent = () => {
   return (
@@ -77,13 +80,21 @@ const ProductComponent = () => {
           </ul>
         </div>
       </div>
-      <div className="flex bg-red-300 mt-24">
+      <div className="flex mt-24 bg-green-500">
         <div className="flex-1 bg-blue-300">
-          <Image src="" alt=""></Image>
-          <Image src="" alt=""></Image>
+          <div className="bg-red-600">
+            <Image src={headset1b} alt="" className=""></Image>
+          </div>
+          <div className="bg-blue-500 object-fill">
+            <Image src={headset1a} alt="" className="object-contain"></Image>
+          </div>
+          {/* 
+          
+          <Image src={headset1a} alt=""></Image> */}
         </div>
-        <div className="flex-1">
-          <Image src="" alt=""></Image>
+        <div className="flex-1 bg-green-500">
+          nvdknrjgb
+          {/* <Image src={headset1c} alt="" width={2} className=""></Image> */}
         </div>
       </div>
     </div>
