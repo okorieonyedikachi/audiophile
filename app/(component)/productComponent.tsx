@@ -93,8 +93,7 @@ const ProductComponent = () => {
           <Image src={headset1a} alt=""></Image> */}
         </div>
         <div className="flex-1 bg-green-500">
-          nvdknrjgb
-          {/* <Image src={headset1c} alt="" width={2} className=""></Image> */}
+          <Image src={headset1c} alt="" className=""></Image>
         </div>
       </div>
     </div>
