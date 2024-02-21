@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import headset2 from "@/public/images/headset2.png";
 import { Button } from "@/components/ui/button";
@@ -6,7 +7,22 @@ import headset1a from "@/public/images/more-images/headset1a.png";
 import headset1b from "@/public/images/more-images/headset1b.png";
 import headset1c from "@/public/images/more-images/headset1c.png";
 
-const ProductComponent = () => {
+const ProductComponent = ({ minQuantity = 1, maxQuantity = 25 }) => {
+  const [count, setCount] = useState(minQuantity);
+
+  const handleIncreaseCounter = () => {
+    if (count < maxQuantity) {
+      setCount((count) => count + 1);
+    }
+  };
+  const handleDecreaseCounter = () => {
+    if (count > minQuantity) {
+      setCount((count) => count - 1);
+    }
+  };
+
+  const OneitemPrice = 2999;
+  const Price = count * OneitemPrice;
   return (
     <div>
       <p className="mb-10">Go Back</p>
@@ -24,13 +40,15 @@ const ProductComponent = () => {
             It redefines your premium headphone experience by reproducing the
             balanced depth and precision of studio-quality sound.
           </p>
-          <p>$ 2,999</p>
+          <p>${Price}</p>
           <div className="w-6/12 flex gap-6">
             <Button
               variant="outline"
               className="flex justify-between items-center"
             >
-              <span>-</span>1<span>+</span>
+              <span onClick={handleDecreaseCounter}>-</span>
+              {count}
+              <span onClick={handleIncreaseCounter}>+</span>
             </Button>
             <Button className="text-xs">ADD TO CART</Button>
           </div>
