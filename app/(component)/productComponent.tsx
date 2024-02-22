@@ -40,7 +40,7 @@ const ProductComponent = ({ minQuantity = 1, maxQuantity = 25 }) => {
             It redefines your premium headphone experience by reproducing the
             balanced depth and precision of studio-quality sound.
           </p>
-          <p>${Price}</p>
+          <p className="text-xl">${Price}</p>
           <div className="w-6/12 flex gap-6">
             <Button
               variant="outline"

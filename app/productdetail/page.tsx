@@ -4,11 +4,14 @@ import Category from "@/components/Category";
 import FourthRectangle from "@/components/FourthRectangle";
 import Footer from "@/components/Footer";
 import ProductComponent from "../(component)/productComponent";
+import NavBar from "@/components/NavBar";
 
 const ProductDetail = () => {
   return (
     <div>
-      <PageHeader title={""} />
+      <div className="w-full bg-[#121212] text-[#FFFFFF] flex flex-col ">
+        <NavBar />
+      </div>
       <div className="w-10/12 mx-auto mt-24">
         <ProductComponent />
         <Category />
