@@ -17,12 +17,11 @@ const Category = () => {
           <div className="bg-[#F1F1F1] rounded-[8px] mt-16 pb-10 w-full flex flex-col items-center">
             <Image src={shadow} alt="shadow"></Image>
             <h1 className="tracking-[2px]">{item.name}</h1>
-            <p className="mt-4 tracking-[2px] text-xs">
-              SHOP{" "}
-              <span className="ml-4 text-primary">
-                <Link href={item.link}>{">"}</Link>
-              </span>
-            </p>
+            <Link href={item.link}>
+              <p className="mt-4 tracking-[2px] text-xs font-bold cursor-pointer">
+                SHOP <span className="ml-4 text-primary">{">"}</span>
+              </p>
+            </Link>
           </div>
         </div>
       ))}
