@@ -2,7 +2,7 @@ import React from "react";
 import PageHeader from "../(component)/pageHeader";
 import CategoryShop from "../(component)/categoryShop";
 import Category from "@/components/Category";
-import FourthRectangle from "@/components/FourthRectangle";
+import FourthRectangle from "@/components/Ad";
 import Footer from "@/components/Footer";
 import { headphonesList } from "@/data";
 

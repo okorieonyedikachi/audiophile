@@ -3,7 +3,7 @@ import PageHeader from "../(component)/pageHeader";
 import { earphonesList, speakerList } from "@/data";
 import CategoryShop from "../(component)/categoryShop";
 import Category from "@/components/Category";
-import FourthRectangle from "@/components/FourthRectangle";
+import FourthRectangle from "@/components/Ad";
 import Footer from "@/components/Footer";
 
 const page = () => {

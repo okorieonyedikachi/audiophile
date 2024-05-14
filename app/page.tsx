@@ -1,6 +1,6 @@
 import Category from "@/components/Category";
 import Footer from "@/components/Footer";
-import FourthRectangle from "@/components/FourthRectangle";
+import FourthRectangle from "@/components/Ad";
 import Header from "@/components/Header";
 import NavBar from "@/components/NavBar";
 import RectangleOne from "@/components/RectangleOne";
